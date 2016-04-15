@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #eee;
+}
+/* slider的第一级父级.slider-wrapper的样式，提供整个slider的长宽大小 */
+.slider-wrapper{
+	width: 99%;
+	margin: 0 auto;
+	height: 360px;
+	/*border: 3px solid red;*/
+}
+/* slider的第二级父级.slider-viewer的样式，暂时感觉是多余的 */
+.slider-viewer{
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	/*border: 2px solid yellow;*/
+}
+/* slider的第三级父级.slider-group的样式，相对定位为它下层的子div的绝对定位提供定位基点 */
+.slider-group{
+	height: 100%;
+	position: relative;
+	/*border: 1px solid blue;*/
+}
+/* 滑块div的样式，绝对定位于父级下 */
+.slider{
+	display: none;       /* 默认状态所有隐藏，只显示第一张div */
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+.slider:nth-of-type(1){
+	background: #333;
+	display: block;       /* 默认状态所有隐藏，只显示第一张div */
+}
+.slider:nth-of-type(2){
+	background: #666;
+}
+.slider:nth-of-type(3){
+	background: #999;
+}
+.slider:nth-of-type(4){
+	background: #bbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
